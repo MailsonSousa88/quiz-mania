@@ -4,7 +4,6 @@ class Pergunta {
     alternativasDaPergunta : Array<string>;
     respostasCorretas : number;
 
-
     constructor (texto:string, alternativas:Array<string>, resposta:number){
         this.textoDaPergunta = texto;
         this.alternativasDaPergunta = alternativas;
@@ -20,10 +19,10 @@ class Pergunta {
         }
 
         if(pergunta == this.respostasCorretas){
-            alert(`Certa Resposta!\nAcertos: ${this.respostasCorretas}`);
+            alert(`Certa Resposta!`);
             return true;
         }else{
-            alert("Resposta Incorreta!");
+            alert(`Resposta Incorreta!\n${this.alternativasDaPergunta.join("\n")}\nAlternativa Correta: ${this.respostasCorretas}`);
             return false;
         }
     }
@@ -49,6 +48,7 @@ function temaGeral(): void{
             acertos++;
         }
     }
+    alert(`Você acertou: ${acertos}/5\nSua pontuação final foi de: ${pontuacao}`);
 }
 //Tema de Cartoon (Modo de jogo numero 2)
 function temaCartoon(): void{
@@ -57,7 +57,7 @@ function temaCartoon(): void{
         new Pergunta("Em 'Os Simpsons', qual o nome da mãe da família?", ["1. Lisa", "2. Marge", "3. Maggie", "4. Patty"], 2),
         new Pergunta("Como é chamado o melhor amigo de Finn em 'Hora de Aventura'?", ["1. BMO", "2. Rei Gelado", "3. Gunter", "4. Jake"], 4),
         new Pergunta("No desenho 'Tom e Jerry', quem seria o Tom?", ["1. Gato", "2. Rato", "3. Cachorro", "4. Pássaro"], 1),
-        new Pergunta("Dessas personagens quem realmente faz parte das 'Meninas Superpoderosas'?", ["1. Docinho", "2. Anne", "3. Francine", "4. Jade"], 3),
+        new Pergunta("No desenho 'As Aventuras de Tintim', como é chamado o cachorrinho de estimação do protagonista?", ["1. Milu", "2. Bilu", "3. Clover", "4. Sam"], 1),
     ];
 
     let pontuacao : number = 0;
@@ -69,6 +69,7 @@ function temaCartoon(): void{
             acertos++;
         }
     }
+    alert(`Você acertou: ${acertos}/5\nSua pontuação final foi de: ${pontuacao}`);
 }
 function menuInicial(): number{
     let escolhaUmaOpcao : number = Number(prompt("1. Jogar\n2. Sobre\n3. Placar\n0. Sair")!);
@@ -79,10 +80,10 @@ function menuInicial(): number{
     return escolhaUmaOpcao;
 }
 function jogar(): void{
-    let escolhaUmModo : number = Number(prompt("1. Tema Geral\n2. Tema Cartoon\n0. Sair")!);
+    let escolhaUmModo : number = Number(prompt("1. Tema Geral\n2. Tema Cartoon\n0. Voltar")!);
     while(isNaN(escolhaUmModo) || escolhaUmModo < 0 || escolhaUmModo > 2){
         alert("Opção Invalida!")
-        escolhaUmModo = Number(prompt("1. Tema Geral\n2. Tema Cartoon\n0. Sair")!);
+        escolhaUmModo = Number(prompt("1. Tema Geral\n2. Tema Cartoon\n0. Voltar")!);
     }
     if(escolhaUmModo == 1){
         temaGeral();
@@ -98,9 +99,9 @@ while(!iniciar){
         jogar();
     }
     else if(suaEscolha == 2){
-
+        alert("Bem-vindo ao QuizMania!\nEsse jogo foi criado pelos alunos de Análise e Desenvolvimento de Sistemas do IFPI, Campus Piripri-Pi\nEscolha um dos modos de jogo e divirta-se!");
     }else if(suaEscolha == 3){
-
+        alert("Esses são os placares de Jogo:\n1° Lugar: 1000 pontos 🥇\n2° Lugar: 800 pontos 🥈\n3° Lugar: 600 pontos 🥉");
     }
     else{
         alert("Obrigado por jogar!");
