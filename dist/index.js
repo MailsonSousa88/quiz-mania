@@ -9,7 +9,7 @@ class Pergunta {
 let perguntasGeral = [
     new Pergunta("Qual é a capital do Brasil?", ["São Paulo", "Brasília", "Amapá", "Minas Gerais"], 1),
     new Pergunta("Em que continente fica o Egito?", ["Europa", "Ásia", "África", "América"], 2),
-    new Pergunta("Quem foi o inventor do avião?", ["Thomas Edison", "Irmãos Wright", "Oppenheimer", "Santos Dumont"], 3),
+    new Pergunta("Quem foi o inventor do avião?", ["Thomas Edison", "Irmãos Wright", "Oppenheimer", "Santos Dumont"], 1),
     new Pergunta("Qual o maior país do mundo?", ["Rússia", "China", "EUA", "Japão"], 0),
     new Pergunta("Qual o maior oceano do mundo?", ["Pacífico", "Índico", "Ártico", "Atlântico"], 0),
 ];
