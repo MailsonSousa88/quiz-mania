@@ -1,12 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QuizMania</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>QuizMania</h1>
-    <script src ="dist/index.js"></script>
+
+  <!-- Tela inicial -->
+  <div id="tela-inicial" class="tela ativa">
+    <h1>🎮 QuizMania 🎮</h1>
+    <button onclick="mostrarTela('tela-jogo')">Jogar</button>
+    <button onclick="mostrarTela('tela-sobre')">Sobre</button>
+    <button onclick="mostrarTela('tela-placar')">Placar</button>
+    <button onclick="sairJogo()">Sair</button>
+  </div>
+
+  <!-- Tela de modos de jogo -->
+  <div id="tela-jogo" class="tela">
+    <h2>Escolha um modo</h2>
+    <button onclick="iniciarJogo('geral')">Tema Geral</button>
+    <button onclick="iniciarJogo('cartoon')">Tema Cartoon</button>
+    <button onclick="mostrarTela('tela-inicial')">Voltar</button>
+  </div>
+
+  <!-- Tela Sobre -->
+  <div id="tela-sobre" class="tela">
+    <h2>Sobre</h2>
+    <p>Bem-vindo ao QuizMania! <br>Criado por alunos do IFPI - ADS.</p>
+    <button onclick="mostrarTela('tela-inicial')">Voltar</button>
+  </div>
+
+  <!-- Tela Placar -->
+  <div id="tela-placar" class="tela">
+    <h2>🏆 Placar</h2>
+    <p>🥇 1º Lugar: 1000 pontos</p>
+    <p>🥈 2º Lugar: 800 pontos</p>
+    <p>🥉 3º Lugar: 600 pontos</p>
+    <button onclick="mostrarTela('tela-inicial')">Voltar</button>
+  </div>
+
+  <!-- Tela Pergunta -->
+  <div id="tela-pergunta" class="tela">
+    <h2 id="texto-pergunta">Pergunta</h2>
+    <div id="opcoes-resposta"></div>
+  </div>
+
+  <!-- Tela Resultado -->
+  <div id="tela-resultado" class="tela">
+    <h2>Resultado Final</h2>
+    <p id="texto-resultado"></p>
+    <button onclick="mostrarTela('tela-inicial')">Voltar ao Menu</button>
+  </div>
+
+  <script src="dist/index.js"></script>
 </body>
 </html>

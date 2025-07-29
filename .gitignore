@@ -1,9 +1,6 @@
 # Ignorar dependências
 node_modules/
 
-# Ignorar Dist
-dis/
-
 # Arquivos de log
 *.log
 
