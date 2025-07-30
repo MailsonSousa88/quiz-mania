@@ -1,7 +1,7 @@
 # 🧠 QuizMania
 
 **QuizMania** é um jogo de perguntas e respostas feito com **TypeScript** para rodar direto no terminal usando `prompt` e `alert`.  
-Desafie seus conhecimentos em dois temas divertidos, acumule pontos e volte ao menu quando quiser.  
+Desafie seus conhecimentos em dois temas divertidos, jogue agora!  
 
 > 🎓 Criado por estudantes do curso de Análise e Desenvolvimento de Sistemas – IFPI / Campus Piripiri-PI.  
 > 👨‍💻 Desenvolvido por **Mailson Sousa**, **Antonio Carlos** e **Railson Araujo**.
@@ -19,7 +19,7 @@ Desafie seus conhecimentos em dois temas divertidos, acumule pontos e volte ao m
 
 ## 🚀 Como rodar o projeto
 
-### ❗ Clone o repositório
+### 🔨 Clone o repositório
 
 ```bash
 git clone https://github.com/MailsonSousa88/quiz-mania
