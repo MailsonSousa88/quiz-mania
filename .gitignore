@@ -2,7 +2,7 @@
 node_modules/
 
 # Ignorar Dist
-dis/
+dist/
 
 # Arquivos de log
 *.log
