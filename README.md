@@ -19,11 +19,12 @@ Desafie seus conhecimentos em dois temas divertidos, acumule pontos e volte ao m
 
 ## 🚀 Como rodar o projeto
 
-### 1️⃣ Clone o repositório
+### ❗ Clone o repositório
 
 ```bash
-git clone https://github.com/seu-usuario/quizmania.git
-cd quizmania
+git clone https://github.com/MailsonSousa88/quiz-mania
+cd quiz-mania
+npm install
 npx tsc
 ```
 ## ⚙️ Após isso abra o live server e pronto
