@@ -26,7 +26,7 @@
             }
             else{
                 alert(`Resposta Incorreta!\n${this.alternativasDaPergunta.join("\n")}\nAlternativa Correta: ${this.respostasCorretas}`);
-                return false;
+                return true;
             }
         }
 
