@@ -1,0 +1,17 @@
+# Ignorar dependências
+node_modules/
+
+# Ignorar Dist
+dist/
+
+# Arquivos de log
+*.log
+
+# Arquivos com informações sensíveis
+.env
+
+# Arquivo temporário do TypeScript
+*.tsbuildinfo
+
+# Cache do editor
+.vscode/

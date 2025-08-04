@@ -1,0 +1,75 @@
+ body{
+  background-color: #dce6eb;
+ }
+.telaInicial{
+text-align: center;/*Centraliza o conteúdo textual dentro da caixa*/
+  padding: 150px;/*Espaço interno entre o conteúdo e as bordas da caixa*/
+  border-radius: 100px;/*arredonda os contos da caixa*/
+  background-color: #d9effb;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);/*Sombra leve abaixo da caixa*/
+  max-width: 500px;/*Limita a largura máxima*/
+  margin: 100px auto;/*Centraliza horizontalmente na tela e dá espaço no topo*/
+}
+ .titulo{
+   font-size: 70px;
+   position: relative;
+   top: -100px;
+  }
+#btnInicio button {
+  display: block;/*Faz cada botão ocupar toda a largura disponível, como um bloco*/
+  width: 100%;/*Define que o botão vai ter 100% da largura*/
+  margin: 20px 0;/*Espaçamento vertical entre os botões*/
+  padding: 40px;/*Espaço interno do botão*/
+  font-size: 30px;/*Tamanho do texto*/
+  background-color: #3498db;
+  color: white;
+  border: none;/*Tamanho do texto*/
+  border-radius: 10px;/*Cantos arredondados*/
+  cursor: pointer;/*Cria efeito suave ao trocar cor do botão*/
+ }
+ #telaQuiz{
+  text-align: center;/*Centraliza o conteúdo textual dentro da caixa*/
+  padding: 150px;/*Espaço interno entre o conteúdo e as bordas da caixa*/
+  border-radius: 100px;/*arredonda os contos da caixa*/
+  background-color: #d9effb;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);/*Sombra leve abaixo da caixa*/
+  max-width: 900px;/*Limita a largura máxima*/
+  margin: 100px auto;/*Centraliza horizontalmente na tela e dá espaço no topo*/
+}
+ .voltarAoMenu button{
+  position:relative;
+   top: -200px;
+   margin-left: 200px;
+  display: block;/*Faz cada botão ocupar toda a largura disponível, como um bloco*/
+  width: 20%;/*Define que o botão vai ter 100% da largura*/
+  margin: 10px 0;/*Espaçamento vertical entre os botões*/
+  padding: 5px;/*Espaço interno do botão*/
+  font-size: 15px;/*Tamanho do texto*/
+  background-color: #000000;
+  color: white;
+  border: none;/*Tamanho do texto*/
+  border-radius: 10px;/*Cantos arredondados*/
+  cursor: pointer;/*Cria efeito suave ao trocar cor do botão*/
+  }
+
+.modos{
+  font-size: 20px;
+   position: relative;
+   top: -100px;
+
+}
+.btnTemaGeral button{
+    position: relative;
+   top: 70;
+
+  width: 30%;/*Define que o botão vai ter 100% da largura*/
+  margin: 10px 0;/*Espaçamento vertical entre os botões*/
+  padding: 20px;/*Espaço interno do botão*/
+  font-size: 30px;/*Tamanho do texto*/
+  background-color: #3498db;
+  color: white;
+  border: none;/*Tamanho do texto*/
+  border-radius: 10px;/*Cantos arredondados*/
+  cursor: pointer;/*Cria efeito suave ao trocar cor do botão*/
+ 
+}
