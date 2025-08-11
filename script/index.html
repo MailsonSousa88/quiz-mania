@@ -5,22 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>QuizMania</title>
      <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+
  </head>
   <body>
   
     <div class="telaInicial">
-    <h1 class="titulo">QuiZ MaNiA </h1>
+    <h1 class="titulo">Quiz Mania</h1>
        <div id="btnInicio"><button onclick="comecarJogo()">Iniciar</button>
-      <button id="btnSobre">Sobre</button> 
-    <button id="btnPlacar">Placar</button></div>
+      <button onclick="sobre()">Sobre</button> 
+    </div>
    </div>
 
   
  <div id="telaQuiz" style="display: none;">
-   <div class="modos"><h1>Escolha um modo de jogo</h1></div>
+   <div class="modos"><h1>Escolha um Tema</h1></div>
  <div class="voltarAoMenu"><button onclick="voltarAoMenu()">Voltar</button></div> 
- <button id="btnTemaGeral">Tema Geral </button>
-  <button id="btnTemaCartoon">Tema Cartoon</button>
+<button id="btnTemaGeral">Tema Geral </button>
+<button id="btnTemaCartoon">Tema Cartoon</button>
+ <div><button id ="btnTemaHerois">Tema Herois</button>
+<button id ="btnTemaPaises"> Tema Paises</button></div>
 </div>
 
 

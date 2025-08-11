@@ -1,6 +1,7 @@
  body{
   background-color: #dce6eb;
- }
+ font-family: 'Poppins', sans-serif;
+}
 .telaInicial{
 text-align: center;/*Centraliza o conteúdo textual dentro da caixa*/
   padding: 150px;/*Espaço interno entre o conteúdo e as bordas da caixa*/
@@ -11,7 +12,7 @@ text-align: center;/*Centraliza o conteúdo textual dentro da caixa*/
   margin: 100px auto;/*Centraliza horizontalmente na tela e dá espaço no topo*/
 }
  .titulo{
-   font-size: 70px;
+   font-size: 60px;
    position: relative;
    top: -100px;
   }
@@ -53,15 +54,14 @@ text-align: center;/*Centraliza o conteúdo textual dentro da caixa*/
   }
 
 .modos{
-  font-size: 20px;
+  font-size: 25px;
    position: relative;
-   top: -100px;
+   top: -90px;
 
 }
-.btnTemaGeral button{
-    position: relative;
-   top: 70;
-
+#btnTemaGeral{
+  position: relative;
+  top: 70;
   width: 30%;/*Define que o botão vai ter 100% da largura*/
   margin: 10px 0;/*Espaçamento vertical entre os botões*/
   padding: 20px;/*Espaço interno do botão*/
@@ -72,4 +72,46 @@ text-align: center;/*Centraliza o conteúdo textual dentro da caixa*/
   border-radius: 10px;/*Cantos arredondados*/
   cursor: pointer;/*Cria efeito suave ao trocar cor do botão*/
  
+}
+
+#btnTemaCartoon{
+  position: relative;
+  top: 70;
+  width: 30%;/*Define que o botão vai ter 100% da largura*/
+  margin: 10px 0;/*Espaçamento vertical entre os botões*/
+  padding: 20px;/*Espaço interno do botão*/
+  font-size: 30px;/*Tamanho do texto*/
+  background-color: #3498db;
+  color: white;
+  border: none;/*Tamanho do texto*/
+  border-radius: 10px;/*Cantos arredondados*/
+  cursor: pointer;/*Cria efeito suave ao trocar cor do botão*/
+}
+
+#btnTemaHerois{
+  position: relative;
+  top: 70;
+  width: 30%;/*Define que o botão vai ter 100% da largura*/
+  margin: 10px 0;/*Espaçamento vertical entre os botões*/
+  padding: 20px;/*Espaço interno do botão*/
+  font-size: 30px;/*Tamanho do texto*/
+  background-color: #3498db;
+  color: white;
+  border: none;/*Tamanho do texto*/
+  border-radius: 10px;/*Cantos arredondados*/
+  cursor: pointer;/*Cria efeito suave ao trocar cor do botão*/
+}
+
+#btnTemaPaises{
+  position: relative;
+  top: 70;
+  width: 30%;/*Define que o botão vai ter 100% da largura*/
+  margin: 10px 0;/*Espaçamento vertical entre os botões*/
+  padding: 20px;/*Espaço interno do botão*/
+  font-size: 30px;/*Tamanho do texto*/
+  background-color: #3498db;
+  color: white;
+  border: none;/*Tamanho do texto*/
+  border-radius: 10px;/*Cantos arredondados*/
+  cursor: pointer;/*Cria efeito suave ao trocar cor do botão*/
 }
