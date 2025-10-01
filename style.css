@@ -1,0 +1,107 @@
+body {
+    background-color: #8e53be;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Arial Black', Arial, sans-serif;
+    color: #3b108a;
+    margin-top: 20px;
+    /* margin-bottom: 0px; */
+}
+
+.menu {
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    display: flex;
+    /* Ativa o Flexbox */
+    justify-content: center;
+    /* Cenmargin: 0;traliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
+    height: 20vh;
+    /* Garante que o container tenha altura para centralização vertical */
+}
+
+.menu button {
+
+    background-color: #9f66ce;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 4px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+.menu button:hover {
+    background-color: #7a3db0;
+}
+
+.menu input[type="radio"] {
+    transform: scale(1.5);
+    margin: 0 10px;
+    border-radius: 20px;
+}
+
+.menu label {
+    font-size: 18px;
+    margin: 0 10px;
+    color: white;
+    user-select: none;
+}
+
+.menu button[type="submit"] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    background-color: #551fac;
+    margin-top: 0px;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+.menu p {
+    text-align: center;
+    font-family: 'Arial Black', Arial, sans-serif;
+    color: #fcfcfc;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 24px;
+} 
+
+.pergunta {
+    text-align: center;
+    font-family: 'Arial Black', Arial, sans-serif;
+    color: #fcfcfc;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+.pergunta p {
+    margin: 0;
+}  
+.pergunta button {
+    display: block;
+    width: 200px;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #9f66ce;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.pergunta button:hover {
+    background-color: #7a3db0;
+}
+.pergunta#btn-voltar {
+    background-color: #551fac;
+}  

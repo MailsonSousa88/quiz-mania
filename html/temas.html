@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <h1>Escolha um tema:</h1>
+    <div class="menu">
+        <input type="radio" id="option-tema-geral" name="tema-quiz" value="geral">
+        <label for="option-tema-geral">Conhecimentos gerais</label>
+        <br>
+        <input type="radio" id="option-tema-cartoon" name="tema-quiz" value="cartoon">
+        <label for="option-tema-cartoon">Cartoon</label>
+    </div>
+    <br>
+    <div class="menu">
+        <button type="submit" id="btn-comecar" onclick="location.href='perguntas.html'">Começar o Quiz</button>
+    </div>
+    <script>
+        // Armazena o tema selecionado no sessionStorage e redireciona para perguntas.html
+        const botaoComecar = document.getElementById('btn-comecar');
+
+        // Adiciona um "ouvinte" de evento de clique ao botão
+        botaoComecar.addEventListener('click', function() {
+            // Encontra qual radio button está selecionado
+            const temaSelecionado = document.querySelector('input[name="tema-quiz"]:checked');
+
+            if (temaSelecionado) {
+                // Se um tema foi selecionado, pega o valor dele (ex: "geral" ou "cartoon")
+                const tema = temaSelecionado.value;
+                
+                // Salva esse valor no armazenamento local do navegador
+                sessionStorage.setItem('temaEscolhido', tema);
+                
+                // Redireciona o usuário para a página de perguntas
+                window.location.href = 'perguntas.html';
+            } else {
+                // Caso nenhum tema seja selecionado (improvável se um estiver com 'checked')
+                alert('Por favor, escolha um tema para começar!');
+            }
+        });
+    </script>
+</body>
+</html>
